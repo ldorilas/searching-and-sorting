@@ -25,10 +25,16 @@ public class SearchAndSort {
 			break;
 		case "stringbubble":
 			sorting.strBubbleSort(strlist);
+			break;
 		}
 		
 		System.out.println("What type of data?");
 		String data = in.nextLine();
+		
 		System.out.println("How is it stored?");
+		String store = in.nextLine();
+		if (store == "array") {
+		
+		}
 	}
 }
