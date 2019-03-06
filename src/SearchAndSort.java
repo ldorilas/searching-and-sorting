@@ -12,17 +12,28 @@ public class SearchAndSort {
 		for (int j = 0; j < n-i-1; j++) {
 			if (arr[j] > arr[j+1]) 
                 	{	 
-                    // swap arr[j+1] and arr[i] 
                     		int temp = arr[j]; 
                     		arr[j] = arr[j+1]; 
                     		arr[j+1] = temp; 
                 		} 
 			}
-		}                
+		}
+		return intlist;
 	}
 	
 	public void bubbleSort (String strlist[]) {
-		
+		int n = intlist.length;
+		for (int i = 0; i < n-1; i++) {
+		for (int j = 0; j < n-i-1; j++) {
+			if (arr[j] > arr[j+1]) 
+                	{	 
+                    		int temp = arr[j]; 
+                    		arr[j] = arr[j+1]; 
+                    		arr[j+1] = temp; 
+                		} 
+			}
+		} 
+		return strlist;
 	}
 	public static Scanner in = new Scanner(System.in);
 	public static void main(String[] args) {
